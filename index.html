@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>myMemoPad</title>
+<script src="js/jquery-3.6.1.min.js"></script>
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/sample.css">
+<script src="https://kit.fontawesome.com/c117fbda8a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<header>
+    <h1>TimeKeepr</h1>
+</header>
+
+
+<main>
+    <section id="clock" class="clock">
+        <div id = clockarea class="clock_area"></div>
+        
+        <div class="btn_area">
+            <button id="start" class="btn">START</button>
+            <!-- <button id="" class="btn">中断</button> -->
+            <button id="stop" class="btn_disable" disabled>STOP</button>
+        </div>
+    </section>
+   
+</main>
+<table id="list">
+<tr class="headline">
+    <th class="date">日付</th>
+    <th class="starttime">開始時間</th>
+    <th class="endtime">終了時間</th>
+    <th class="tag">タイトル</th>
+    <th class="description">詳細</th>
+    <th class="save_change">保存・編集</th>
+    <th class="delete">削除</th>
+    <th class="master_count" style="display: none;"></th>
+</tr>
+
+
+<!-- ここに追加データが挿入される -->
+</table>
+<footer>
+    <ul class="footer_contents">
+        <li id="history_btn" class="footer_item">History</li>
+        <li id="export_btn" class="footer_item">Export</li>
+  </ul>
+
+  <div id="history" class="history">
+    <h2 id="close" class="btn close">閉じる</h2>
+    <table id="historical_list">
+        <tr class="headline">
+            <th class="date">日付</th>
+            <th class="starttime">開始時間</th>
+            <th class="endtime">終了時間</th>
+            <th class="tag">タイトル</th>
+            <th class="description">詳細</th>
+            <th class="save_change">編集</th>
+            <th class="delete">削除</th>
+            <th class="master_count" style="display: none;"></th>
+        </tr>
+
+    </table>
+
+  </div>
+
+
+
+</footer>
+
+
+<script src="js/timekeeper.js"></script>
+
+
+
+</body>
